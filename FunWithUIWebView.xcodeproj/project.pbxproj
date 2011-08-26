@@ -16,6 +16,8 @@
 		B822C87D140468D800F881B9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822C87B140468D800F881B9 /* MainWindow.xib */; };
 		B822C880140468D800F881B9 /* FunWithUIWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B822C87F140468D800F881B9 /* FunWithUIWebViewViewController.m */; };
 		B822C883140468D900F881B9 /* FunWithUIWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B822C881140468D900F881B9 /* FunWithUIWebViewViewController.xib */; };
+		B83CC63E14055AB20089FD3C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B83CC63D14055AB20089FD3C /* index.html */; };
+		B83CC64114055BB70089FD3C /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = B83CC63F14055B580089FD3C /* script.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,18 @@
 		B822C869140468D800F881B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B822C86B140468D800F881B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B822C86D140468D800F881B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B822C871140468D800F881B9 /* FunWithUIWebView-Info.plist */ = {isa = PBXFileReference; path = "FunWithUIWebView-Info.plist"; sourceTree = "<group>"; };
+		B822C871140468D800F881B9 /* FunWithUIWebView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunWithUIWebView-Info.plist"; sourceTree = "<group>"; };
 		B822C873140468D800F881B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B822C875140468D800F881B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B822C877140468D800F881B9 /* FunWithUIWebView-Prefix.pch */ = {isa = PBXFileReference; path = "FunWithUIWebView-Prefix.pch"; sourceTree = "<group>"; };
-		B822C878140468D800F881B9 /* FunWithUIWebViewAppDelegate.h */ = {isa = PBXFileReference; path = FunWithUIWebViewAppDelegate.h; sourceTree = "<group>"; };
+		B822C877140468D800F881B9 /* FunWithUIWebView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunWithUIWebView-Prefix.pch"; sourceTree = "<group>"; };
+		B822C878140468D800F881B9 /* FunWithUIWebViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunWithUIWebViewAppDelegate.h; sourceTree = "<group>"; };
 		B822C879140468D800F881B9 /* FunWithUIWebViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunWithUIWebViewAppDelegate.m; sourceTree = "<group>"; };
 		B822C87C140468D800F881B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		B822C87E140468D800F881B9 /* FunWithUIWebViewViewController.h */ = {isa = PBXFileReference; path = FunWithUIWebViewViewController.h; sourceTree = "<group>"; };
+		B822C87E140468D800F881B9 /* FunWithUIWebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunWithUIWebViewViewController.h; sourceTree = "<group>"; };
 		B822C87F140468D800F881B9 /* FunWithUIWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunWithUIWebViewViewController.m; sourceTree = "<group>"; };
 		B822C882140468D900F881B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FunWithUIWebViewViewController.xib; sourceTree = "<group>"; };
+		B83CC63D14055AB20089FD3C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B83CC63F14055B580089FD3C /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		B822C85A140468D800F881B9 = {
 			isa = PBXGroup;
 			children = (
+				B83CC63B14055A930089FD3C /* www */,
 				B822C86F140468D800F881B9 /* FunWithUIWebView */,
 				B822C868140468D800F881B9 /* Frameworks */,
 				B822C866140468D800F881B9 /* Products */,
@@ -99,6 +104,15 @@
 				B822C877140468D800F881B9 /* FunWithUIWebView-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B83CC63B14055A930089FD3C /* www */ = {
+			isa = PBXGroup;
+			children = (
+				B83CC63D14055AB20089FD3C /* index.html */,
+				B83CC63F14055B580089FD3C /* script.js */,
+			);
+			name = www;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +165,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83CC64114055BB70089FD3C /* script.js in Resources */,
 				B822C874140468D800F881B9 /* InfoPlist.strings in Resources */,
 				B822C87D140468D800F881B9 /* MainWindow.xib in Resources */,
 				B822C883140468D900F881B9 /* FunWithUIWebViewViewController.xib in Resources */,
+				B83CC63E14055AB20089FD3C /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +300,7 @@
 				B822C888140468D900F881B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

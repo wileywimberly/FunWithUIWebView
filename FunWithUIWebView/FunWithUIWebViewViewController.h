@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FunWithUIWebViewViewController : UIViewController
+@interface FunWithUIWebViewViewController : UIViewController {
+    UIWebView *webView;
+}
+
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
+
+- (void) processLogger;
+- (IBAction)helloFromObjectiveC:(id)sender;
+- (void)helloFromJavaScript:(NSString*)msg;
 
 @end
